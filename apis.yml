@@ -1,7 +1,18 @@
 aid: celltype
 name: Celltype
-description: Celltype is a company surfaced as a portfolio company of y-combinator and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  CellType is an AI-driven drug discovery company building what it calls "The
+  Biological World Model" — foundation models and autonomous agents that
+  simulate human biology to predict drug responses in human systems before
+  clinical trials, reducing reliance on traditional preclinical models such as
+  mice and cell lines. Its core technology, Cell2Sentence (C2S), teaches large
+  language models to understand cellular biology by converting single-cell gene
+  expression data into a text-like format that models can interpret, and the
+  company reports using it to discover and validate a novel cancer treatment
+  signal targeting tumor immunogenicity. A Y Combinator (Winter 2026) company
+  based in New York City, CellType works with large pharmaceutical partners and
+  currently operates as a B2B research and drug-discovery platform rather than
+  a public developer API.
 url: https://raw.githubusercontent.com/api-evangelist/celltype/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +20,45 @@ x-backed-by:
 - y-combinator
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://www.celltype.com/favicon.svg
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Biotechnology
+- Drug Discovery
+- Artificial Intelligence
+- Machine Learning
+- Life Sciences
+- Genomics
+- Single-Cell
+- Foundation Models
+- Healthcare
 apis: []
+common:
+- type: DomainSecurity
+  url: security/celltype-domain-security.yml
+- type: Website
+  url: https://www.celltype.com
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
